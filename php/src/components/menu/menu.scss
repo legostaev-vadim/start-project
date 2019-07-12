@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  align-items: center;
+  &__list {
+    margin-left: 10px;
+  }
+  &__item {
+    margin: 5px;
+    &--active {
+      color: orangered;
+    }
+  }
+}

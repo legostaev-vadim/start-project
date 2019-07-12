@@ -1,0 +1,9 @@
+.footer {
+  color: $cs;
+  display: flex;
+  align-items: center;
+
+  &__copyright {
+    margin-left: 10px;
+  }
+}

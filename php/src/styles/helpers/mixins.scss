@@ -1,0 +1,24 @@
+@mixin min($sc) {
+  @media (min-width: #{$sc}px) {
+    @content;
+  }
+}
+
+@mixin max($sc) {
+  @media (max-width: #{$sc}px) {
+    @content;
+  }
+}
+
+@mixin retina() {
+  @media (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@mixin no-select {
+  -ms-user-select: none; 
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  user-select: none; 
+}

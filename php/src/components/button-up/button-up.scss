@@ -1,0 +1,31 @@
+.button-up {
+  position: fixed;
+  z-index: 10000;
+  right: 12px;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: $op;
+  border: none;
+  border-radius: $rd;
+  background: $cw;
+  transition: all $dr;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom: 12px solid #fff;
+  }
+  &:hover {
+      opacity: 1;
+  }
+  &--show {
+      bottom: 12px;
+  }
+}

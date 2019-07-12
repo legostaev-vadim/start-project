@@ -57,7 +57,7 @@ function styles() {
       concat('main.scss'),
       sass(),
       gulpIf(mode === 'production', multipipe(
-        autoprefixer({ browsers: ['last 15 versions'] }),
+        autoprefixer(),
         csscomb()
       ))
     )))
